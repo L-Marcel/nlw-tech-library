@@ -8,17 +8,13 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0"/>
-        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="9.0.0" />
-        <PackageReference Include="Swashbuckle.AspNetCore" Version="7.2.0" />
+        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="9.0.0"/>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="7.2.0"/>
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Controllers\" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\TechLibrary.Cases\TechLibrary.Cases.csproj" />
-      <ProjectReference Include="..\TechLibrary.Communication\TechLibrary.Communication.csproj" />
+        <ProjectReference Include="..\TechLibrary.Cases\TechLibrary.Cases.csproj"/>
+        <ProjectReference Include="..\TechLibrary.Communication\TechLibrary.Communication.csproj"/>
     </ItemGroup>
 
 </Project>

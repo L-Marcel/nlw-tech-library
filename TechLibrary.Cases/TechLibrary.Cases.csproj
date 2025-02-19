@@ -7,7 +7,17 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\TechLibrary.Communication\TechLibrary.Communication.csproj" />
+        <ProjectReference Include="..\TechLibrary.Communication\TechLibrary.Communication.csproj"/>
+        <ProjectReference Include="..\TechLibrary.Exceptions\TechLibrary.Exceptions.csproj"/>
+        <ProjectReference Include="..\TechLibrary.Infrastructure\TechLibrary.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="FluentValidation" Version="11.11.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Books\Register\" />
     </ItemGroup>
 
 </Project>
