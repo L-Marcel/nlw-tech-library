@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechLibrary.Infrastructure"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechLibrary.Domain", "TechLibrary.Domain\TechLibrary.Domain.csproj", "{49EA61C5-FD4C-4153-A318-C69FD88004AB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechLibrary.Services", "TechLibrary.Services\TechLibrary.Services.csproj", "{17728798-629E-40DF-BD4A-2DA8F1ECE5D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{49EA61C5-FD4C-4153-A318-C69FD88004AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49EA61C5-FD4C-4153-A318-C69FD88004AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49EA61C5-FD4C-4153-A318-C69FD88004AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17728798-629E-40DF-BD4A-2DA8F1ECE5D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17728798-629E-40DF-BD4A-2DA8F1ECE5D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17728798-629E-40DF-BD4A-2DA8F1ECE5D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17728798-629E-40DF-BD4A-2DA8F1ECE5D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -14,13 +14,23 @@ public abstract class AccessToken {
             Expires = DateTime.UtcNow.AddHours(1),
             Subject = new ClaimsIdentity(claims),
             SigningCredentials = new SigningCredentials(
-                AccessToken.SecurityKey(),
+                SecurityKey(),
                 SecurityAlgorithms.HmacSha256Signature
             )
         };
 
         JwtSecurityTokenHandler tokenHandler = new JwtSecurityTokenHandler();
         return tokenHandler.WriteToken(tokenHandler.CreateToken(description));
+    }
+
+    public static TokenValidationParameters GetTokenValidationParameters() {
+        return new TokenValidationParameters {
+            ValidateIssuer = false,
+            ValidateAudience = false,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true, 
+            IssuerSigningKey = SecurityKey()
+        };                                                                               
     }
 
     private static SymmetricSecurityKey SecurityKey() {
